@@ -1,13 +1,16 @@
 import {useState, useEffect} from 'react'
-import { getCarts } from '../lib/client'
 
 export default function Home() {
   const [carts, setCarts] = useState([]);
-  useEffect(() => {
-    const data = getCarts();
-    console.log(data)
-    setCarts(data)
-  }, [setCarts])
+  useEffect(()=> {
+    fetch(`/api/assets?type=TYPE`)
+      .then(res => res.json())
+      .then((results) => {
+        console.log(results)
+        setCarts(results);
+      })
+      .catch(err => console.log(err));
+  }, [setCarts]);
   
   return (
     <div className="container p-3">
