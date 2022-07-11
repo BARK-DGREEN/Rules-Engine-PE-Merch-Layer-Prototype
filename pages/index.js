@@ -1,4 +1,14 @@
+import {useState, useEffect} from 'react'
+import { getCarts } from '../lib/client'
+
 export default function Home() {
+  const [carts, setCarts] = useState([]);
+  useEffect(() => {
+    const data = getCarts();
+    console.log(data)
+    setCarts(data)
+  }, [setCarts])
+  
   return (
     <div className="container p-3">
       <button className="btn btn-primary m-3">BarkBox</button>
