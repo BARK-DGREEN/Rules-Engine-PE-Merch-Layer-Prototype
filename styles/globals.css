@@ -1,3 +1,31 @@
+@font-face {
+  font-family: "apercu";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  src: url("../public/fonts/apercu-regular.woff");
+}
+
+@font-face {
+  font-family: "apercu-bold";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  src: url("../public/fonts/apercu-bold.woff");
+}
+
+@font-face {
+  font-family: "pancho";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  src: url("../public/fonts/pancho-medium.woff");
+}
+
+@font-face {
+  font-family: "pancho-semibold";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  src: url("../public/fonts/pancho-semibold.woff");
+}
+
 html,
 body {
   padding: 0;
