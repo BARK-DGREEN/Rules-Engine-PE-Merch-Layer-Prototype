@@ -21,8 +21,6 @@ export default function Rules(noDataIndication = null) {
   const [objectType, setObjectType] = useState("");
   const [updatedByUser, setUpdatedByUser] = useState("userIdWhoUpdated")
 
-  const [operationalFields, setOperationalFields] = useState("");
-
   const createObject = () => {
     // Logic to grab all form inputs
     const values = {
