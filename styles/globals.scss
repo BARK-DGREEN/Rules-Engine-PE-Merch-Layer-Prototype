@@ -26,12 +26,20 @@
   src: url("../public/fonts/pancho-semibold.woff");
 }
 
+$primary:#00AFD7;
+$secondary: #1A4E8A;
+$light: #EFFAFE;
+@import "../node_modules/bootstrap/scss/bootstrap";
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "apercu", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "pancho-semibold", serif;
 }
 
 a {
