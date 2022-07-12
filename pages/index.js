@@ -1,16 +1,15 @@
-import {useState, useEffect} from 'react'
+import {createCustomObject} from '../lib/client'
 
 export default function Home() {
-  const [carts, setCarts] = useState([]);
-  useEffect(()=> {
-    fetch(`/api/assets?type=TYPE`)
-      .then(res => res.json())
-      .then((results) => {
-        console.log(results)
-        setCarts(results);
-      })
-      .catch(err => console.log(err));
-  }, [setCarts]);
+  const createObject = () => {
+    // Logic to grab all form inputs
+    const values = {
+      test: 'test'
+    } 
+    const container = 'test-container' // Rules, Messages, Experiences, Collections, etc.
+    const key = 'test-key' // UUID of some sort
+    createCustomObject(container, key, values)
+  }
   
   return (
     <div className="container p-3">
@@ -44,6 +43,7 @@ export default function Home() {
           </li>
         </ul>
       </div>
+      <button className="btn btn-primary m-3" onClick={createObject}>Create Custom Object</button>
     </div>
   );
 }
