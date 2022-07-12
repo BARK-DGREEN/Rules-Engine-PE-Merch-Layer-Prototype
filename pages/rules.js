@@ -20,7 +20,7 @@ export default function Rules() {
           <input type="text" className="form-control" id="collectionTitle" aria-describedby="collectionTitle" placeholder="Enter title"/>
           <label htmlFor="collectionDescription">Description</label>
           <MDEditor value={description} onChange={setDescription} id="collectionDescription"/>
-          <button type="button" className="btn btn-primary mt-3 float-end">Save</button>
+          <button type="button" className="btn btn-secondary mt-3 float-end text-white">Save</button>
         </div>
       </div>
     </div>
